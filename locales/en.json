@@ -1,0 +1,42 @@
+{
+  "BeautyNavigation": {
+    "brandName": "Beauty Box",
+    "subscriptionLabel": "Subscription",
+    "ordersLabel": "Orders",
+    "logoutIcon": "👋",
+    "logoutLabel": "Log out"
+  },
+  "BeautyWelcome": {
+    "greetingPrefix": "Welcome back,",
+    "subtitle": "Manage your beauty subscription"
+  },
+  "BeautyUpcomingOrder": {
+    "title": "Your Next Delivery",
+    "deliveryDateLabel": "Delivery date",
+    "skipLabel": "Skip this delivery",
+    "skippedMessage": "Delivery skipped",
+    "emptyMessage": "No upcoming deliveries scheduled."
+  },
+  "BeautyUpsell": {
+    "title": "You might also love",
+    "addLabel": "Add to box",
+    "addedLabel": "Added",
+    "emptyMessage": "No recommendations available.",
+    "fallbackImageAlt": "Beauty product"
+  },
+  "BeautyPromo": {
+    "title": "Special Offer",
+    "description": "Apply your exclusive discount code",
+    "discountCode": "BEAUTY20",
+    "ctaText": "Apply code",
+    "appliedText": "Applied!",
+    "icon": "✨",
+    "imageAlt": "Promo"
+  },
+  "BeautyOrderHistory": {
+    "title": "Order History",
+    "emptyMessage": "No past orders yet.",
+    "itemLabelSingular": "item",
+    "itemLabelPlural": "items"
+  }
+}
