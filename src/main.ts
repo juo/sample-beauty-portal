@@ -128,7 +128,7 @@ async function setupEditorMode(root: HTMLElement, routerService: RouterService, 
     const translationService = createTranslationService(themeState.locales);
     provideContext(root, TranslationContext, translationService);
 
-    await editorModule.setupEditorMode(routes, themeState).catch((error: unknown) => {
+    await editorModule.setupEditorMode({ routerService, themeState }).catch((error: unknown) => {
       console.error("Failed to setup editor mode", error);
     });
 

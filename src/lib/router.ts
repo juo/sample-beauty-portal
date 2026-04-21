@@ -71,9 +71,9 @@ export function createBeautyRouterService(): RouterService {
     },
     getPages() {
       return [
-        { path: "/login", block: "BeautyLoginPage" },
-        { path: "/", block: "BeautySubscriptionPage" },
-        { path: "/orders", block: "BeautyOrdersPage" },
+        { title: "Login", path: "/login", block: "BeautyLoginPage" },
+        { title: "Subscription", path: "/", block: "BeautySubscriptionPage" },
+        { title: "Orders", path: "/orders", block: "BeautyOrdersPage" },
       ];
     },
   };
