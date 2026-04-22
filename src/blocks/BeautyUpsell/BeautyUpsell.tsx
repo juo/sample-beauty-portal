@@ -45,9 +45,10 @@ export function BeautyUpsell({
   const [failedProductImageIds, setFailedProductImageIds] = useState(new Set<string>());
 
   useEffect(() => {
+    if (!subscriptionId) return;
     setLoading(true);
     void subscriptionService
-      .getUpsellProducts({ subscriptionId: subscriptionId ?? "" })
+      .getUpsellProducts({ subscriptionId })
       .then((result) => {
         if (result._tag === "Success") {
           setProducts(result.data);
