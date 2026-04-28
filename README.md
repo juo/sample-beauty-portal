@@ -116,6 +116,3 @@ The sample uses three routes:
 - `/`
 - `/orders`
 
-## Notes
-
-- This repository is intended as a public reference template, not an npm package.
