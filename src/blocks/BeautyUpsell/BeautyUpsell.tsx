@@ -47,14 +47,12 @@ export function BeautyUpsell({
   useEffect(() => {
     if (!subscriptionId) return;
     setLoading(true);
-    void subscriptionService
-      .getUpsellProducts({ subscriptionId })
-      .then((result) => {
-        if (result._tag === "Success") {
-          setProducts(result.data);
-        }
-        setLoading(false);
-      });
+    void subscriptionService.getUpsellProducts({ subscriptionId }).then((result) => {
+      if (result._tag === "Success") {
+        setProducts(result.data);
+      }
+      setLoading(false);
+    });
   }, [subscriptionId]);
 
   async function handleAdd(product: UpsellProduct) {
